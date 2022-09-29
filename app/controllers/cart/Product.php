@@ -1,6 +1,6 @@
 <?php
 
-namespace app\controllers\dados;
+namespace app\controllers\cart;
 
 use app\interfaces\ControllerInterface;
 

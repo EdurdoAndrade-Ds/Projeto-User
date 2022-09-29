@@ -1,21 +1,27 @@
 <?php
 
-namespace app\controllers\dados;
+namespace app\controllers\cart;
 
 use app\interfaces\ControllerInterface;
 
-class Product implements ControllerInterface
+class Home implements ControllerInterface
 {
+    public array $data = [];
+    public string $view;
+    public string $master;
+
     public function index(array $args)
     {
-        // var_dump('Teste de Qualidade');
-        // die();
+        $this->data = [
+            'title' => 'Cart'
+        ];
+        $this->master = 'cart/index.php';
+        $this->view = 'cart/home.php';
     }
 
     public function edit(array $args)
     {
-        // var_dump($args);
-        // die();
+        // TODO: Implement edit() method.
     }
 
     public function show(array $args)
@@ -37,5 +43,4 @@ class Product implements ControllerInterface
     {
         // TODO: Implement destroy() method.
     }
-
 }

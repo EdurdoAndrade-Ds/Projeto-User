@@ -13,7 +13,8 @@ class Home
 
     public function index()
     {
-        $users = (new User)->show();
+        // $users = (new User)->show();
+        $users = require('../app/helpers/user.php');
         $this->view = 'home.php';
         $this->data = [
             'title' => 'Home',

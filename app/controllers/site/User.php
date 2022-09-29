@@ -13,6 +13,8 @@ class User
     public string $view;
     public array $data = [];
     public string $master = 'index.php';
+    public string $userMaster = 'Eduardo Andrade';
+
 
 
     public function show()
