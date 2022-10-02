@@ -48,7 +48,7 @@ class Login implements ControllerInterface
                     $_SESSION['login'] = $login;
                     
                     
-                    return redirect('/login');
+                    return redirect('/home.php');
                     // header('Location: app/views/home.php');
                 } else {
                     // Algum erro ocorreu

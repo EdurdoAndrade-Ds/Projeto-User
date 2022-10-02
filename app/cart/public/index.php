@@ -9,6 +9,8 @@ require '../vendor/autoload.php';
 
 $products = require '../app/helpers/products.php';
 
+$quantity = require '../app/classes/CartProducts.php';
+
 $cart = new Cart;
 
 

@@ -24,7 +24,7 @@ $products = $cartProducts->products(new Cart);
 </head>
 <body>
 	
-	<h2>Cart | <a href="/">Home</a></h2>
+	<h2>Cart | <a href="/cart">Home</a></h2>
 
 	<hr>
 
