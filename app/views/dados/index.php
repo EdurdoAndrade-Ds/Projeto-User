@@ -16,13 +16,10 @@
     <section id="header">
         <ul id="nav">
             <li><a href="/">Início</a></li>
-            <!-- <li><a href="/signup">SignUp</a></li>
-            <li><a href="/login">Login</a></li> -->
         </ul>
 
         <div>
             <?php echo welcome('user'); ?>
-            <!-- <?php echo 'Bem-vindo Usuário: '.NAME; ?> -->
 
 <?php
 

@@ -59,7 +59,7 @@ class Login implements ControllerInterface
             include('login.php');
         }
         
-    return redirect('/');
+        return redirect('/');
     }
 
     public function destroy(array $args)
@@ -70,12 +70,7 @@ class Login implements ControllerInterface
 
         return redirect('/login');
 
-        // if(isset($_GET['logout'])) {
-        //     unset($_SESSION['login']);
-        //     session_destroy();
-        //     header('Location: index.php');
-        // }
-        // include('home.php');
+    
     }
 
     public function edit(array $args)

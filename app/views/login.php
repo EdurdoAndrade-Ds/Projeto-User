@@ -10,13 +10,3 @@
 <br>
 
 <?php echo flash('login'); ?>
-
-
-
-
-
-
-<!-- <form action="/login/store" method="post"> -->
-    <!-- <a href="/login/store" name="acao" class="btn btn-primary">Logar</a> -->
-    <!-- <p><input type="submit" name="acao" value="Enviar!"></p> -->
-

@@ -13,11 +13,6 @@ $quantity = require '../app/classes/CartProducts.php';
 
 $cart = new Cart;
 
-
-// $read = new Read;
-// $products = $read->all('products');
-
-
 $productsInCart = $cart->cart();
 
 ?>

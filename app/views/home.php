@@ -3,8 +3,6 @@
 use app\classes\databaseUser; 
 
 $users = require('../app/helpers/user.php');
-// var_dump($user);
-// die();
 
 $views = "app\helpers\user.php";
 
@@ -21,8 +19,3 @@ $views = "app\helpers\user.php";
             <?php endforeach; ?>
         </ul>
     </div>
-
-<!-- // site real -->
-
-
-<!-- <li><?php echo $user->firstName ?> <?php echo $user->lastName ?> | <a href="/user/show/<?php echo $user->id ?>">Ver user</a></li> -->

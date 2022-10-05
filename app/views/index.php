@@ -23,19 +23,8 @@
 
             <div>
                 
-                <?php
-                        echo welcome('user');
-
-                        // echo 'Bem-vindo Usuário: '.NAME;
-                        // if($_SESSION['login'] !== 'root')
-                        // {
-                        //     echo 'Bem-vindo Usuário: '.NAME;
-                        // } else {
-                        //     echo 'Bem-vindo Usuário: '.$_SESSION['login'];
-                        // } 
-                    ?>
-
-
+                <?php echo welcome('user'); ?>
+                
             </div>
         </section>
    

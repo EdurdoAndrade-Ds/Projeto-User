@@ -7,7 +7,7 @@ return [
     4 => ['name' => 'Product 4', 'price' => 8437],
     5 => ['name' => 'Product 5', 'price' => 9876],
     6 => ['name' => 'Product 6', 'price' => 2198],
-    7 => ['name' => 'Product7', 'price' => 9999],
-    8 => ['name' => 'Product8', 'price' => 5823],
-    9 => ['name' => 'Product9', 'price' => 4545],
+    7 => ['name' => 'Product 7', 'price' => 9999],
+    8 => ['name' => 'Product 8', 'price' => 5823],
+    9 => ['name' => 'Product 9', 'price' => 4545],
 ];
