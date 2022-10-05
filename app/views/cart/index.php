@@ -45,8 +45,8 @@ $productsInCart = $cart->cart();
         </ul>
 
         <div>
-            <!-- <?php echo welcome('user'); ?> -->
-            <?php  echo 'Bem-vindo Usuário: '.NAME; ?>
+            <?php echo welcome('user'); ?>
+            <!-- <?php  echo 'Bem-vindo Usuário: '.NAME; ?> -->
 
         </div>
     </section>

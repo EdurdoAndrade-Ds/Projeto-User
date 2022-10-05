@@ -22,6 +22,8 @@
 
         <div>
             <?php echo welcome('user'); ?>
+            <!-- <?php echo 'Bem-vindo Usuário: '.NAME; ?> -->
+
 <?php
 
 $users = require('../app/helpers/user.php'); 

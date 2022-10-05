@@ -18,12 +18,23 @@
                 <li><a href="/login">Login</a></li>
                 <li><a href="/admin">Admin</a></li>
                 <li><a href="/cart">Cart</a></li>
-                <!-- <li><a href="/cart">Carrinho De Compras</a></li> -->
+                <li><a href="/login/destroy">Sair</a></li>
             </ul>
 
             <div>
-                <!-- <?php echo welcome('user'); ?> -->
-                <?php  echo 'Bem-vindo Usuário: '.NAME; ?>
+                
+                <?php
+                        echo welcome('user');
+
+                        // echo 'Bem-vindo Usuário: '.NAME;
+                        // if($_SESSION['login'] !== 'root')
+                        // {
+                        //     echo 'Bem-vindo Usuário: '.NAME;
+                        // } else {
+                        //     echo 'Bem-vindo Usuário: '.$_SESSION['login'];
+                        // } 
+                    ?>
+
 
             </div>
         </section>

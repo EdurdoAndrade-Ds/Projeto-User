@@ -35,7 +35,7 @@ class Login implements ControllerInterface
             if(isset($_POST['acao'])) {
                 $login = 'root';
                 $senha = '1';
-                $userP = 'Eduardo';
+                // $userP = 'Eduardo';
                 
                 $loginForm = $_POST['login'];
                 $senhaForm = $_POST['senha'];
@@ -44,59 +44,38 @@ class Login implements ControllerInterface
                     // Logado com sucesso
                     
                     echo 'logado com sucesso';
-                    die();
                     $_SESSION['login'] = $login;
                     
                     
-                    return redirect('/home.php');
+                    return redirect('/');
                     // header('Location: app/views/home.php');
                 } else {
                     // Algum erro ocorreu
+                    return redirect('/login');
                     echo 'Dados inválidos.';
                 }
             } 
 
             include('login.php');
         }
-        // $email = filter_input(INPUT_POST, 'email', FILTER_SANITIZE_EMAIL);
-        // $password = filter_input(INPUT_POST, 'password', FILTER_SANITIZE_STRING);
-
-        // $user = new User;
-        // $userFound = $user->this->FindAllUser(new FindBy());
-
-        // if (!$user) {
-        //     Flash::set('login', 'Usuário ou senha inválidos');
-        //     return redirect('/login');
-        // }
-
-        // $passwordMatch = password_verify($password, $userFound->password);
-
-        // if (!$passwordMatch) {
-        //     Flash::set('login', 'Usuário ou senha inválidos');
-        //     return redirect('/login');
-        // }
-        
-        // unset($userFound->password);
-        
-        // $_SESSION['user'] = $userFound;
         
     return redirect('/');
     }
 
     public function destroy(array $args)
     {
-        // session_destroy();
+        session_destroy();
 
-        // unset($_SESSION['acao']);
+        unset($_SESSION['acao']);
 
-        // return redirect('/');
+        return redirect('/login');
 
-        if(isset($_GET['logout'])) {
-            unset($_SESSION['login']);
-            session_destroy();
-            header('Location: index.php');
-        }
-        include('home.php');
+        // if(isset($_GET['logout'])) {
+        //     unset($_SESSION['login']);
+        //     session_destroy();
+        //     header('Location: index.php');
+        // }
+        // include('home.php');
     }
 
     public function edit(array $args)

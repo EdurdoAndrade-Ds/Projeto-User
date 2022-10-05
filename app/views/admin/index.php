@@ -21,9 +21,9 @@
         </ul>
 
         <div>
-            <!-- <?php echo welcome('user'); ?> -->
+            <?php echo welcome('user'); ?>
             <!-- <?php  echo 'Bem-vindo Usuário: '.$_SESSION['login'].''; ?> -->
-            <?php  echo 'Bem-vindo Usuário: '.NAME; ?>
+            <!-- <?php  echo 'Bem-vindo Usuário: '.NAME; ?> -->
 
 
         </div>

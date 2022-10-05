@@ -1,12 +1,13 @@
 <?php
 
-function welcome($index)
+function welcome($user)
 {
-    if (isset($_SESSION[$index])) {
-        $user = $_SESSION[$index];
+    if (isset($_SESSION['acao'])) {
+        $user = $_SESSION['acao'];
 
-        return $user->firstName.' '.$user->lastName . '| <a href="/login/destroy">Logout</a>';
-    }
+        return 'Visitante';
+    } 
+    return $_SESSION['login'] . '| <a href="/login/destroy">Logout</a>';
 
-    return 'Visitante';
+
 }
