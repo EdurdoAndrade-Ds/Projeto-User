@@ -29,13 +29,25 @@ class Login implements ControllerInterface
     }
 
     public function store()
-    {
+    {   
+        $users = require('../app/helpers/user.php');
+
+        foreach ($users as $index => $user):
+
+            $user['firstName'];
+            $user['password'];  
+
+        endforeach; 
+
         if(!isset($_SESSION['login'])) {
 
             if(isset($_POST['acao'])) {
-                $login = 'root';
-                $senha = '1';
-                // $userP = 'Eduardo';
+                $login = $user['firstName'];
+                $senha = $user['password'];
+
+                echo $login;
+                echo $senha;
+                // die();
                 
                 $loginForm = $_POST['login'];
                 $senhaForm = $_POST['senha'];

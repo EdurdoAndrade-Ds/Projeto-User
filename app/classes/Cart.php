@@ -2,6 +2,7 @@
 
 namespace app\classes;
 
+use app\classes\BlockNoReason;
 use app\interfaces\CartInterface;
 
 class Cart implements CartInterface

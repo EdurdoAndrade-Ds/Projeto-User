@@ -41,7 +41,7 @@ class MyApp
 
             extract($this->controller->data);
             require '../app/views/'.$this->controller->master;       // Voltar ao normal
-            // require '../app/views/login.php';
+            // require '../app/controllers/site/Login.php';
         }
     }
 }

@@ -7,7 +7,8 @@ function welcome($user)
 
         return 'Visitante';
     } 
-    return $_SESSION['login'] . '| <a href="/login/destroy">Logout</a>';
+    
+    return $_SESSION['login'] . ' | <a href="/login/destroy">Logout</a>';
 
 
 }

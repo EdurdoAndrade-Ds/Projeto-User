@@ -18,7 +18,9 @@
                 <li><a href="/login">Login</a></li>
                 <li><a href="/admin">Admin</a></li>
                 <li><a href="/cart">Cart</a></li>
-                <li><a href="/login/destroy">Sair</a></li>
+                <li><a href="/User/show">User</a></li>
+                <li><a href="/teste">Teste</a></li>
+
             </ul>
 
             <div>

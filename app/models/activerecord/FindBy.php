@@ -17,8 +17,8 @@ class FindBy implements ActiveRecordExecuteInterface
     public function execute(ActiveRecordInterface $activeRecordInterface)
     {
 
-        return 'Login com sucesso';
-        die();
+        return require '../app/helpers/user.php';
+
         // try {
         //     $query = $this->createQuery($activeRecordInterface);
 

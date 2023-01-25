@@ -1,7 +1,8 @@
 <?php
 
-// Para pegar o caminho da viws
+// Para pegar o caminho da views
 define('VIEW_PATH', '../app/views/');
+define('LOGIN', '/login/store');
 
 // validate
 define('REQUIRED', 'ValidateRequired');

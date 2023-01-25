@@ -3,12 +3,18 @@
 namespace app\controllers\cart;
 
 use app\interfaces\ControllerInterface;
+use app\classes\BlockNoReason;
 
 class Home implements ControllerInterface
 {
     public array $data = [];
     public string $view;
     public string $master;
+
+    public function __construct()
+    {
+        BlockNoReason::block($this, ['show']);
+    }
 
     public function index(array $args)
     {
@@ -26,7 +32,7 @@ class Home implements ControllerInterface
 
     public function show(array $args)
     {
-        // TODO: Implement show() method.
+        return 'app\classes\Cart.php';
     }
 
     public function update(array $args)

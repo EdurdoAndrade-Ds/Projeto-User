@@ -38,18 +38,18 @@ class SignUp
             return redirect('/signup');
         }
 
-        print_r('Login com sucesso');
-        die();
         
+        echo 'Signup com sucesso ' . '|' . ' <a href="/" class="btn btn-primary">Home</a>';
+        die();
         // $user = new User;
-        // $user->firstName = $validate->data['firstName'];
-        // $user->lastName = $validate->data['lastName'];
-        // $user->email = $validate->data['email'];
-        // $user->password = password_hash($validate->data['password'], PASSWORD_DEFAULT);
-        // $created = $user->execute(new Insert);
+        $user->firstName = $validate->data['firstName'];
+        $user->lastName = $validate->data['lastName'];
+        $user->email = $validate->data['email'];
+        $user->password = password_hash($validate->data['password'], PASSWORD_DEFAULT);
+        $created = $user->execute(new Insert);
 
         $created = $this->table->findyAllUser(new FindAllUser);
-        // $created = 'sucess';
+        $created = 'sucess';
 
         if ($created) {
             Flash::set('created', 'Cadastrado com sucesso', 'success');
@@ -58,3 +58,8 @@ class SignUp
         return redirect('/signup');
     }
 }
+
+    ?>
+
+<!-- // HTML -->
+<link rel="stylesheet" href="/assets/css/styles.css">

@@ -14,19 +14,23 @@ class User
     public array $data = [];
     public string $master = 'index.php';
     public string $userMaster = 'Eduardo Andrade';
-
-
-
+    
+    
     public function show()
     {
-        $user = (new FindAllUser)->excute();
+        $users = require('../app/helpers/user.php');
+        // $user = (new FindAllUser)->excute();
         // $user = (new UserModel)->execute(new FindBy(field:'id', value:$args[0], fields:'id,firstName,lastName'));
         
-        $users = [
-            'firstName' => 'Eduardo',
-            'lastName' => 'Andrade',
-            'id' => '1',
-        ];
+        foreach ($users as $index => $user): 
+
+            $user['id']; 
+            $user['firstName'];  
+            $user['lastName'];
+            $user['id']; 
+
+        endforeach;
+
         if (!$user) {
             throw new Exception('Usuário não encontrado');
         }
